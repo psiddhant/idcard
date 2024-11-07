@@ -13,6 +13,7 @@ const Page = () => {
     const [formData, setFormData] = useState({
         name: '',
         s_o: '',
+        nameOrSo: '',
         post: '',
         workingArea: '',
         aadhaarNumber: '',
@@ -65,39 +66,53 @@ const Page = () => {
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <div>
                                 <label className="block text-sm font-medium">Name</label>
-                                <Input type="text" name="name" required placeholder="Enter your name" value={formData.name} onChange={handleChange}/>
+                                <Input type="text" name="name" required placeholder="Enter your name"
+                                       value={formData.name} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Post</label>
-                                <Input type="text" name="post" required placeholder="Enter your post" value={formData.post} onChange={handleChange}/>
+                                <Input type="text" name="post" required placeholder="Enter your post"
+                                       value={formData.post} onChange={handleChange}/>
                             </div>
                             <div>
-                                <label className="block text-sm font-medium">S/o</label>
-                                <Input type="text" name="s_o" required placeholder="Enter father's name" value={formData.s_o} onChange={handleChange}/>
+                                <label className="block text-sm font-medium">S/o Or Husband Name</label>
+                                <Input type="text" name="nameOrSo" required placeholder="Enter father's name"
+                                       value={formData.nameOrSo} onChange={handleChange}/>
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium">S/o Or Husband Name</label>
+                                <Input type="text" name="s_o" required placeholder="Enter father's name"
+                                       value={formData.s_o} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Working Area</label>
-                                <Input type="text" name="workingArea" required placeholder="Enter working area" value={formData.workingArea} onChange={handleChange}/>
+                                <Input type="text" name="workingArea" required placeholder="Enter working area"
+                                       value={formData.workingArea} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Aadhaar Number</label>
-                                <Input type="text" name="aadhaarNumber" required placeholder="Enter Aadhaar number" value={formData.aadhaarNumber} onChange={handleChange}/>
+                                <Input type="text" name="aadhaarNumber" required placeholder="Enter Aadhaar number"
+                                       value={formData.aadhaarNumber} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Address</label>
-                                <Input type="text" name="address" required placeholder="Enter address" value={formData.address} onChange={handleChange}/>
+                                <Input type="text" name="address" required placeholder="Enter address"
+                                       value={formData.address} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Contact Number</label>
-                                <Input type="tel" name="contactNumber" required placeholder="Enter contact number" value={formData.contactNumber} onChange={handleChange}/>
+                                <Input type="tel" name="contactNumber" required placeholder="Enter contact number"
+                                       value={formData.contactNumber} onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Date of Joining</label>
-                                <Input type="date" name="dateOfJoining" required value={formData.dateOfJoining} onChange={handleChange}/>
+                                <Input type="date" name="dateOfJoining" required value={formData.dateOfJoining}
+                                       onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Expiry Date</label>
-                                <Input type="date" name="expiryDate" required value={formData.expiryDate} onChange={handleChange}/>
+                                <Input type="date" name="expiryDate" required value={formData.expiryDate}
+                                       onChange={handleChange}/>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium">Upload Image</label>
@@ -113,7 +128,7 @@ const Page = () => {
                 {isSubmitted && (
                     <div className="mb-6">
                         <div ref={idCardRef} className="min-h-[600px] bg-green-700 w-[800px] p-[1px] rounded-[10px]">
-                            <div className="h-2/6 bg-white flex p-8 items-center justify-between">
+                        <div className="h-2/6 bg-white flex p-8 items-center justify-between">
                                 <Image src="/logoone.png" alt="Logo One" height={100} width={100}/>
                                 <h1 className="text-black [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] text-center font-[inconsolata] text-sm min-w-24 h-24">
                                     A COLLABORATED PANEL OF HABITAT G.I<br/>
@@ -151,7 +166,7 @@ const Page = () => {
                                     />
                                 </div>
                                 <div className="h-64 rounded-tl-2xl p-12 text-black rounded-bl-2xl bg-white ml-12 w-[600px]">
-                                    <h1 className="text-2xl">S/o : {formData.s_o}</h1>
+                                    <h1 className="text-2xl">{formData.nameOrSo} : {formData.s_o}</h1>
                                     <h1 className="text-2xl">Mobile : {formData.contactNumber}</h1>
                                     <h1 className="text-2xl">Valid Upto : {formData.expiryDate}</h1>
                                     <h1 className="text-2xl">Address : {formData.address}</h1>
