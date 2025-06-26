@@ -306,8 +306,7 @@ const Page = () => {
                                         PRODUCT SALES MARKETING BY <br/>
                                         JAIVIK HABITAT FARMER HORTICULTURE PVT.LTD (UP)
                                     </span><br />
-                                    <span>JHFHPL MARKETING SUPPORT </span><br />
-                                    <span className="text-xl tracking-tight font-['Dm sans'] text-green-800 font-bold">JIGAR ORGRANIC FARMER PRODUCER COMPANY LIMITED</span>
+                                 
                                 </h1>
                                 <Image src="/logo.png" alt="Logo Two" height={100} width={100} className="shadow-md rounded-full"/>
                             </div>
@@ -345,7 +344,8 @@ const Page = () => {
                                 </div>
                             </div>
                             <div className="mt-4 w-full text-center text-2xl mb-4 font-light text-white">
-                                <h1>JAIVIK HABITAT FARMER HORTICULTUTRE PVT.LTD</h1>
+                                   <span>JHFHPL MARKETING SUPPORT </span><br />
+                                   <span className="text-xl tracking-tight font-['Dm sans'] text-green-800 font-bold">JIGAR ORGRANIC FARMER PRODUCER COMPANY LIMITED</span>
                             </div>
                         </div>
                         <div className="mt-4 text-center">
