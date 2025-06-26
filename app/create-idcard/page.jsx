@@ -343,9 +343,9 @@ const Page = () => {
                                     <h1 className="text-2xl">Working Area : {formData.workingArea}</h1>
                                 </div>
                             </div>
-                            <div className="mt-4 w-full text-center text-2xl mb-4 font-light text-white">
-                                   <span>JHFHPL MARKETING SUPPORT </span><br />
-                                   <span className="text-xl tracking-tight font-['Dm sans'] text-green-800 font-bold">JIGAR ORGRANIC FARMER PRODUCER COMPANY LIMITED</span>
+                            <div className="mt-4 w-full text-center text-md mb-4 font-light text-white">
+                                   <span>SUPPORTING COMPANY </span><br />
+                                   <span className="text-xl tracking-tight font-['Dm sans'] text-white font-bold">JIGAR ORGRANIC FARMER PRODUCER COMPANY LIMITED</span>
                             </div>
                         </div>
                         <div className="mt-4 text-center">
