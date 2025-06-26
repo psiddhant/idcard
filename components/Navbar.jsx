@@ -8,7 +8,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { IoMenu } from "react-icons/io5";
-import {UserButton} from "@clerk/nextjs";
+// import {UserButton} from "@clerk/nextjs";
 import Link from "next/link";
 
 
@@ -18,7 +18,9 @@ const Navbar = () => {
            <Sheet>
              <div className={"flex items-center justify-between p-5"}>
                  <SheetTrigger><IoMenu  className={"text-3xl"}/></SheetTrigger>
-                 <button ><UserButton className={"h-24"}/></button>
+                 <button >
+                    {/* <UserButton className={"h-24"}/> */}
+                    </button>
              </div>
                <SheetContent className={"bg-[#212121] text-white"} side={"left"}>
                    <SheetHeader className={"text-white"}>
