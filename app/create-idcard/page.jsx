@@ -312,7 +312,7 @@ const Page = () => {
                             </div>
                             <div className="h-[7px] bg-orange-400"/>
                             <div className="p-4 flex text-center items-center justify-between">
-                                <div>
+                                <div> 
                                     <div className="h-12 bg-black rounded w-60 flex items-center text-center justify-center font-bold text-white">
                                         ENTREPRENEUR CODE
                                     </div>
@@ -344,7 +344,7 @@ const Page = () => {
                                 </div>
                             </div>
                             <div className="mt-4 w-full text-center text-md mb-4 font-light text-white">
-                                   <span>SUPPORTING COMPANY </span><br />
+                                   <span>Promoted By</span><br />
                                    <span className="text-xl tracking-tight font-['Dm sans'] text-white font-bold">JIGAR ORGRANIC FARMER PRODUCER COMPANY LIMITED</span>
                             </div>
                         </div>
